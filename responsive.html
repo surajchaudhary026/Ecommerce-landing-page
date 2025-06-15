@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Landing Page</title>
+  <link rel="stylesheet" href="responsive.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="logo">ShopZone</div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search products..." class="search-input">
+      <i class="fas fa-shopping-cart cart-icon"></i>
+      <button class="btn-login" onclick="toggleModal('login-modal')">Login</button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Discover the Best Deals</h1>
+      <p>Trendy Fashion, Electronics, Home & More</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="filters">
+      <label>Filter: </label>
+      <select>
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Home</option>
+      </select>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="SMART WATCH.jpeg" alt="Product 1">
+        <h3>Smartwatch</h3>
+        <p>₹2,999</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="HEADPHONE.jpeg" alt="Product 2">
+        <h3>Wireless Headphones</h3>
+        <p>₹1,999</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="SNEAKER.webp" alt="Product 3">
+        <h3>Sneakers</h3>
+        <p>₹3,499</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h3>Subscribe to our Newsletter</h3>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ShopZone. All rights reserved.</p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal('login-modal')">&times;</span>
+      <h2>Login</h2>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Submit</button>
+    </div>
+  </div>
+
+  <script src="responsive.js"></script>
+</body>
+</html>
